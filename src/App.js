@@ -1,6 +1,9 @@
 import React from 'react'
-import Home from './components/Home'
 import 'bulma'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Home from './components/Home'
+import Navbar from './components/Navbar'
+
 
 
 const App = () => {
@@ -8,9 +11,19 @@ const App = () => {
 
 
   return (
-    
-    <Home />
+    <>
+      <BrowserRouter>
+        <Navbar />
+        <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
+          
 
+        </Switch>
+      </BrowserRouter>
+      
+    </>
   ) 
 }
 
