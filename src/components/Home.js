@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
 
@@ -12,17 +13,21 @@ const Home = () => {
             <div className="level">
               <div className="leve-left">
                 <div className="level-item">
-                  <button className="button is-danger is-light is-medium">
-                    <span className="warm" role="img" aria-label="sun">☀️</span>
-                    <p>Warm</p>
+                  <button  className="button is-danger is-light is-medium">
+                    <Link to="/warmplace">
+                      <span className="warm" role="img" aria-label="sun">☀️</span>
+                      Warm
+                    </Link>
                   </button>
                 </div> 
               </div>
               <div className="level-right">
                 <div className="level-item">
-                  <button className="button is-info is-light is-medium">
-                    <span className="cool" role="img" aria-label="snowflake">❄️</span>
-                    <p>Cool</p>
+                  <button Link to="/coolplace" className="button is-info is-light is-medium">
+                    <Link to="/coolplace">
+                      <span className="cool" role="img" aria-label="snowflake">❄️</span>
+                      Cool
+                    </Link>
                   </button>
                 </div>
               </div>
