@@ -14,7 +14,7 @@ const Home = () => {
               <div className="leve-left">
                 <div className="level-item">
                   <button  className="button is-danger is-light is-medium">
-                    <Link to="/warmplace">
+                    <Link to="/someplace">
                       <span className="warm" role="img" aria-label="sun">☀️</span>
                       Warm
                     </Link>
@@ -24,7 +24,7 @@ const Home = () => {
               <div className="level-right">
                 <div className="level-item">
                   <button Link to="/coolplace" className="button is-info is-light is-medium">
-                    <Link to="/coolplace">
+                    <Link to="/someplace">
                       <span className="cool" role="img" aria-label="snowflake">❄️</span>
                       Cool
                     </Link>

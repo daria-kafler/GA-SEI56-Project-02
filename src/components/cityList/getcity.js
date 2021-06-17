@@ -17,8 +17,8 @@
 
 const warmCities = [
   {
-    city: 'Paphos',
-    country: 'Cyprus',
+    city: 'Tel Aviv',
+    country: 'Israel',
   },
   {
     city: '	Manaus',
@@ -108,8 +108,7 @@ export function getRandomCoolCity(){
 export function getRandomWarmCity(){
   return warmCities[Math.floor(Math.random() * warmCities.length)]
 }
-console.log('random cool ->', getRandomCoolCity)
-console.log('random warm ->', getRandomWarmCity)
+
 
 
 

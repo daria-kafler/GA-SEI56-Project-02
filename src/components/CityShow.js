@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-// import { getRandomCoolCity, getRandomWarmCity } from './cityList/getcity'
+import { getRandomCoolCity, getRandomWarmCity } from './cityList/getcity'
 
 // ``
 
@@ -15,11 +15,15 @@ const CityShow = () => {
 
   const [hasError, setHasError] = useState(false)
 
+  const coolcity = getRandomCoolCity()
+  const warmcity = getRandomWarmCity()
+  console.log('random cool spread ->', coolcity.city)
+  console.log('random warm ->', warmcity.country)
 
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get('https://goweather.herokuapp.com/weather/Kingston')
+        const { data } = await axios.get(`https://goweather.herokuapp.com/weather/${coolcity.city}`)
         setWarmPlace(data)
       } catch (err) {
         setHasError(true)
@@ -32,8 +36,7 @@ const CityShow = () => {
   }, [])
   console.log('API has error', hasError)
   console.log('data received from API', warmPlace)
-  // const coolcity = getRandomCoolCity()
-  // const warmcity = getRandomWarmCity()
+
   return (
     <section>
       <div className="hero">
@@ -41,7 +44,7 @@ const CityShow = () => {
           <div className="container">
             { warmPlace ?
               <>
-                <h1 className="title is-1 has-text-centered">Placeholder seems nice at the moment!</h1>
+                <h1 className="title is-1 has-text-centered">{coolcity.city} seems nice at the moment!</h1>
                 <div className="container title is-2 has-text-centered">
                   <div key={warmPlace} className="columns is-multiline">
                     <p>{warmPlace.temperature}</p>
