@@ -1,0 +1,53 @@
+
+a:link {color:white;}      /* unvisited link */
+a:visited {color:white;}  /* visited link */
+a:hover {color:pink;}  /* mouse over link */
+a:active {color:pink;}  /* selected link */
+
+
+.hero-body {
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 3rem 1.5rem;
+}
+
+.level {
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hero{
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-around;
+  font-weight:bold;
+}
+
+.go-buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.button.is-info.is-medium{
+  margin: 10px;
+}
+
+.forecast {
+  font-size: 20px;
+  color: azure;
+  font-weight:bold;
+}
+
+.current-weather {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 26px;
+  font-weight:bold;
+}
+

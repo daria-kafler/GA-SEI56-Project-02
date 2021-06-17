@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="navbar is-dark">
       <div className="container has-text-centered">
         <div className="navbar-brand">
-          <span>
+          <span className="tag is-dark is-large has-text-light">
             <Link to="/">❄️☀️ Start page ☀️❄️</Link>
           </span>
         </div>
