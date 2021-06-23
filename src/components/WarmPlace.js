@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { getRandomWarmCity } from './cityList/getcity'
-import { Link } from 'react-router-dom'
-
 // ``
 
 const WarmPlace = () => {
@@ -17,11 +15,11 @@ const WarmPlace = () => {
   const [hasError, setHasError] = useState(false)
 
   const warmcity = getRandomWarmCity()
-  console.log('random warm ->', warmcity.country)
-
+  
   useEffect(() => {
     const getData = async () => {
       try {
+        setWarmPlace(false)
         const { data } = await axios.get(`https://goweather.herokuapp.com/weather/${warmcity.city}`)
         setWarmPlace(data)
       } catch (err) {
@@ -31,16 +29,10 @@ const WarmPlace = () => {
 
     }
     getData()
-
-    // const handleChange = (event) => {
-    //   const click = event.target.value
-    //   setWarmPlace(click)
-    //   console.log('what did i click?', click)
-    // }
-
   }, [])
-  console.log('API has error', hasError)
-  console.log('data received from API', warmPlace)
+
+  // console.log('API has error', hasError)
+  // console.log('data received from API', warmPlace)
 
   return (
     <section>
@@ -62,10 +54,10 @@ const WarmPlace = () => {
                 <div className="card">
                   <div className="card-content">
                     {warmPlace.forecast.map((place, index) => {
-                      console.log('place --->', place)
+                      // console.log('place --->', place)
                       return (
                         <div key={index}>
-                          <p>{place.day}</p>
+                          <p>Day {place.day}</p>
                           <p>{place.temperature}</p>
                           <p>{place.wind}</p>
                         </div>
@@ -75,22 +67,18 @@ const WarmPlace = () => {
                 </div>
                 <div className="go-buttons">
                   <button className="button is-info is-medium">
-                    <a target="_blank" rel="noreferrer" href="https://www.skyscanner.net/">✈️ Let's gooo</a>
+                    <a target="_blank" rel="noreferrer" href="https://www.skyscanner.net/">✈️ Let&apos;s gooo</a>
                   </button>
-                  <button className="button is-info is-medium">
-                    <Link to='/warm'> What else you got?</Link>
+                  <button onClick={() => window.location.reload()} className="button is-info is-medium">
+                    What else you got?
                   </button>
                 </div>
-
-
               </>
               :
               <h2 className="title has-text-centered">
-                {hasError ? 'Oops, something went wrong' : 'loading...'}
+                {hasError ? 'Oops, something went wrong' : 'searching...'}
               </h2>
-
             }
-
           </div>
         </div>
       </div>

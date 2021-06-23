@@ -49,7 +49,7 @@ const warmCities = [
     country: 'Nigeria',
   },
   {
-    city: 'PanamaCity',
+    city: 'Panama City',
     country: 'Panama',
   },
   {
