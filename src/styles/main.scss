@@ -25,9 +25,9 @@ a:active {color:pink;}   /* selected link */
   justify-content: space-between;
 }
 
-.twitter-icon {
+.twitter-icon, .linkedin-icon, .github-icon {
   padding-left: 10px;
-  width: 32px;
+  width: 28px;
 }
 
 .tag.is-dark.is-medium.has-text-light {

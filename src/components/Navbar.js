@@ -12,10 +12,20 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         <span className="tag is-dark is-medium has-text-light">
-          Created by Daria Kafler
+          App in one day project - by Daria
           <span>
             <a target="_blank" rel="noreferrer" href="https://twitter.com/dariakafler">
               <img src="./iconmonstr-twitter-1-32.png" className="twitter-icon"></img>
+            </a>
+          </span>
+          <span>
+            <a target="_blank" rel="noreferrer" href="www.linkedin.com/in/dariakafler/">
+              <img src="./iconmonstr-linkedin-3-32.png" className="linkedin-icon"></img>
+            </a>
+          </span>
+          <span>
+            <a target="_blank" rel="noreferrer" href="https://github.com/daria-kafler">
+              <img src="./iconmonstr-github-1-32.png" className="github-icon"></img>
             </a>
           </span>
         </span>
