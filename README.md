@@ -8,6 +8,8 @@ A quick front end **React** app built in one day, using **Axios**, **Bulma** and
 
 [See deployed project](https://mini-react-app.netlify.app/)
 
+![Screenschot of the project 'warm place' page](https://github.com/daria-kafler/mini-project-react-app/blob/master/images/ProjectScreenshot.png)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
