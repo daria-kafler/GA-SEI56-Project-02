@@ -19,7 +19,7 @@ const Navbar = () => {
             </a>
           </span>
           <span>
-            <a target="_blank" rel="noreferrer" href="www.linkedin.com/in/dariakafler/">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/dariakafler/">
               <img src="./iconmonstr-linkedin-3-32.png" className="linkedin-icon"></img>
             </a>
           </span>
