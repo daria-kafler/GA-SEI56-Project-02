@@ -3,7 +3,7 @@
 A one day Hackathon solo project where I planned, designed and built a small front-end app, consuming a simple weather API.
 
 ### Tools used: 
-* React 
+* ReactJS
 * Axios
 * Node.js 
 * Bulma framework
