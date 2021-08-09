@@ -12,7 +12,6 @@ A one day Hackathon solo project where I planned, designed and built a small fro
 ## The app: “Take me someplace…” 
 
 ![Screenschot of the project 'warm place' page](https://github.com/daria-kafler/mini-project-react-app/blob/master/images/ProjectScreenshot.png)
-[Check it out](https://mini-react-app.netlify.app/) 
 
 You can check it out here >>> [https://mini-react-app.netlify.app/](https://mini-react-app.netlify.app/)
 
