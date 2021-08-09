@@ -18,8 +18,8 @@ You can check it out here >>> [https://mini-react-app.netlify.app/](https://mini
 Once in a while, we all want to be in a very different weather system than the one we're currently in. 
 Where do you feel like going?
 
-## Process and challanges
-The API I used didn't have an end-point which allowed access to a full list of cities and temperatures, nor a list of countries forthose cities.
+## Process and challenges
+The API I used didn't have an end-point which allowed access to a full list of cities and temperatures, nor a list of countries for those cities.
 I decided to create a small seed files for the worlds coldest and warmest cities and the countries they were located in (to help user understand locations of cities unknown to them).
 Each press of the 'warm' and 'cold' buttons sends a GET request to the API with the name of a random city from the relevant seed file.
 
