@@ -1,6 +1,6 @@
 # Project 2 with General Assembly: One day mini React app
 ## Intro
-A one day Hackathon solo project where I planned, designed and built a small front-end app, consuming a simple weather API.
+A one day Hackathon solo project where I planned, designed and built a small front-end app, consuming a weather API.
 
 ### Tools used: 
 * ReactJS
@@ -52,5 +52,6 @@ export function getRandomWarmCity(){
 ## Future features
 * Improve and refine styling
 
-
+## Acknowledgement
+Possible thanks to [Roberto Duessmann's](https://github.com/robertoduessmann) [Weather API](https://github.com/robertoduessmann/weather-api)
 
