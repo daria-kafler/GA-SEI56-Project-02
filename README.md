@@ -1,4 +1,4 @@
-# Project 1 with General Assembly: One day mini React app
+# Project 2 with General Assembly: One day mini React app
 ## Intro
 A one day Hackathon solo project where I planned, designed and built a small front-end app, consuming a simple weather API.
 
