@@ -23,7 +23,7 @@ Where do you feel like going?
 ## Approach
 
 Having only one day for this project, I kept the scope for small and simple, but what should I make? It happened to be a hot day and I wished I could be somewhere colder, an 'AHA' moment right there. 
-I looked for simple open-source weather API and came across [Roberto Duessmann's](https://github.com/robertoduessmann) [Weather API](https://github.com/robertoduessmann/weather-api), which happened to be one of the few I felt confident in understanding the documentation for at the time.
+I looked for a simple open-source weather API and came across [Roberto Duessmann's](https://github.com/robertoduessmann) [Weather API](https://github.com/robertoduessmann/weather-api), which happened to be one of the few I felt confident in understanding the documentation for at the time.
 
 I drew up a quick wireframe in my notebook and figured I'd flesh things out once I get started.
 
@@ -94,7 +94,7 @@ export function getRandomWarmCity(){
 * When pressing the 'What else you got?' button on the destination page, I wanted the displayed information to re-render without reloading the entire page. Unfortunately I couldn't find a solution in time and opted for a simple `onClick={() => window.location.reload()}`.
 
 ## Key takeaways
-* I was surprised how quickly I was able to pick up Bulma framwork, this make me more curious about trying out other frameworks.
+* I was surprised how quickly I was able to pick up Bulma framework, this make me more curious about trying out other frameworks.
 * Wireframes are essential!
 
 ## Future features
