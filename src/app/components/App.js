@@ -1,11 +1,11 @@
 import "bulma";
 import "../../shared/styles/main.scss";
 
+import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Home } from "../../home";
 import Navbar from "./Navbar";
-import { Warm } from "../../warm";
-import { Cool } from "../../cool";
+import { Forecast } from "../../forecast";
 
 const App = () => {
   return (
@@ -13,10 +13,10 @@ const App = () => {
       <Navbar />
       <Switch>
         <Route path="/warm">
-          <Warm />
+          <Forecast />
         </Route>
         <Route path="/cool">
-          <Cool />
+          <Forecast />
         </Route>
         <Route path="/">
           <Home />

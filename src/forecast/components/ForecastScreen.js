@@ -1,9 +1,11 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import { useForecast } from "../../shared/hooks";
-// ``
 
 const WarmPlace = () => {
-  const { data, loading, error, fetchForecast } = useForecast(true);
+  const location = useLocation();
+  const isWram = location.pathname.toLowerCase() === "warm";
+  const { data, loading, error, fetchForecast } = useForecast(isWram);
 
   return (
     <section>
