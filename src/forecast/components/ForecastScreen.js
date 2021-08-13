@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { useForecast } from "../../shared/hooks";
+import { useForecast } from "../hooks/useForecast";
 
 const WarmPlace = () => {
   const location = useLocation();
@@ -31,7 +31,6 @@ const WarmPlace = () => {
                 <div className="card">
                   <div className="card-content">
                     {data.forecast.map((place) => {
-                      // console.log('place --->', place)
                       return (
                         <div key={`${place.day}`}>
                           <p>Day {place.day}</p>
