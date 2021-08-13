@@ -30,15 +30,13 @@ const ForecastScreen = () => {
                 </p>
                 <div className="card">
                   <div className="card-content">
-                    {data.forecast.map((place) => {
-                      return (
-                        <div key={`${place.day}`}>
-                          <p>Day {place.day}</p>
-                          <p>{place.temperature}</p>
-                          <p>{place.wind}</p>
-                        </div>
-                      );
-                    })}
+                    {data.forecast.map((place) => (
+                      <div key={`${place.day}`}>
+                        <p>Day {place.day}</p>
+                        <p>{place.temperature}</p>
+                        <p>{place.wind}</p>
+                      </div>
+                    ))}
                   </div>
                 </div>
                 <div className="go-buttons">
