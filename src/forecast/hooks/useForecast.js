@@ -11,12 +11,7 @@ const fetchData = async (city) =>
   await axios.get(`https://goweather.herokuapp.com/weather/${city}`);
 
 export const useForecast = (warm) => {
-  const [forecast, setForecast] = useState({
-    temperature: "",
-    wind: "",
-    description: "",
-    forecast: [],
-  });
+  const [forecast, setForecast] = useState();
 
   const [error, setError] = useState();
   const [loading, setLoading] = useState(false);
@@ -25,6 +20,7 @@ export const useForecast = (warm) => {
     const city = getRandomCity(warm);
     setError();
     setLoading(true);
+    setForecast();
     fetchData(city.name)
       .then(({ data }) => {
         setForecast({ ...data, ...city });
