@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
 
-
   return (
     <>
       <section className="hero is-fullheight-with-navbar">
@@ -33,7 +32,6 @@ const Home = () => {
               {/* </div> */}
             </div>
           </div>
-
         </div>
       </section>
     </>
