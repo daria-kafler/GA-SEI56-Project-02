@@ -1,37 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Button, Container } from "../../shared/components";
+import styled from "styled-components";
+
+const Title = styled.h1`
+  color: red;
+`;
+
+const ButtonsWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+`;
 
 const Home = () => {
   return (
-    <section className="hero is-fullheight-with-navbar">
-      <div className="hero-body">
-        <div className="container">
-          <h1 className="title is-1 has-text-centered">Take me someplace...</h1>
-          <div className="level">
-            <div className="level-item has-text-centered">
-              <button className="button is-danger is-large has-text-light">
-                <Link to="/warm">
-                  <span className="warm" role="img" aria-label="sun">
-                    ☀️
-                  </span>
-                  Warm
-                </Link>
-              </button>
-            </div>
-            <div className="level-item has-text-centered">
-              <button className="button is-info is-large has-text-light">
-                <Link to="/cool">
-                  <span className="cool" role="img" aria-label="snowflake">
-                    ❄️
-                  </span>
-                  Cool
-                </Link>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Container>
+      <h1 className="title is-1 has-text-centered">Take me to a place...</h1>
+      <ButtonsWrapper>
+        <Link to="/warm">
+          <Button secondary>☀️ Warm</Button>
+        </Link>
+        <Link to="/cool">
+          <Button>❄️ Cool</Button>
+        </Link>
+      </ButtonsWrapper>
+    </Container>
   );
 };
 export default Home;

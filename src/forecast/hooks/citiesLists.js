@@ -4,7 +4,7 @@ const cities = [
     country: "Israel",
   },
   {
-    name: "	Manaus",
+    name: "Manaus",
     country: "Brazil",
   },
   {
