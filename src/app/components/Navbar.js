@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { WebLink } from "../../shared/components";
 
 const Root = styled.nav`
   display: flex;
@@ -18,10 +19,6 @@ const IconsWrapper = styled.div`
   align-items: center;
 `;
 
-const SocialLink = styled.a.attrs({ target: "_blank", rel: "noreferrer" })`
-  display: flex;
-`;
-
 const SocialImage = styled.img`
   width: 20px;
   margin: 0 0 0 10px;
@@ -33,15 +30,15 @@ const Navbar = () => {
       <Link to="/">❄️ ☀️ Homepage ☀️ ❄️</Link>
       <IconsWrapper>
         App in one day project - by Daria
-        <SocialLink href="https://twitter.com/dariakafler">
+        <WebLink href="https://twitter.com/dariakafler">
           <SocialImage src="./iconmonstr-twitter-1-32.png" />
-        </SocialLink>
-        <SocialLink href="https://www.linkedin.com/in/dariakafler/">
+        </WebLink>
+        <WebLink href="https://www.linkedin.com/in/dariakafler/">
           <SocialImage src="./iconmonstr-linkedin-3-32.png" />
-        </SocialLink>
-        <SocialLink href="https://github.com/daria-kafler">
+        </WebLink>
+        <WebLink href="https://github.com/daria-kafler">
           <SocialImage src="./iconmonstr-github-1-32.png" />
-        </SocialLink>
+        </WebLink>
       </IconsWrapper>
     </Root>
   );

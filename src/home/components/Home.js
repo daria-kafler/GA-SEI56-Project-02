@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button, Container } from "../../shared/components";
+import { Button, Container, Title } from "../../shared/components";
 import styled from "styled-components";
 
-const Title = styled.h1`
-  color: red;
+const _Title = styled(Title)`
+  text-align: center;
+  margin: 0 0 24px;
 `;
 
 const ButtonsWrapper = styled.div`
@@ -17,7 +18,7 @@ const ButtonsWrapper = styled.div`
 const Home = () => {
   return (
     <Container>
-      <h1 className="title is-1 has-text-centered">Take me to a place...</h1>
+      <_Title>Take me to a place...</_Title>
       <ButtonsWrapper>
         <Link to="/warm">
           <Button secondary>☀️ Warm</Button>
