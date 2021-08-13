@@ -64,7 +64,7 @@ const ForecastScreen = () => {
               </div>
             </>
           )}
-          {loading && <h2 className="title has-text-centered">searching...</h2>}
+          {loading && <h2 className="title has-text-centered">Searching...</h2>}
           {error && (
             <ErrorWrapper>
               <h2 className="title has-text-centered">
