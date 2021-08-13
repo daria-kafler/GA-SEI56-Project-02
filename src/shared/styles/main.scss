@@ -1,9 +1,15 @@
-
-
-a:link {color:white;}      /* unvisited link */
-a:visited {color:white;}  /* visited link */
-a:hover {color:pink;}  /* mouse over link */
-a:active {color:pink;}   /* selected link */
+a:link {
+  color: white;
+} /* unvisited link */
+a:visited {
+  color: white;
+} /* visited link */
+a:hover {
+  color: pink;
+} /* mouse over link */
+a:active {
+  color: pink;
+} /* selected link */
 
 // .container {
 //     margin-bottom: 20px;
@@ -14,9 +20,14 @@ a:active {color:pink;}   /* selected link */
   justify-content: space-evenly;
 }
 
-.hero{
-  background-color: #4158D0;
-  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+.hero {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
 }
 
 .navbar.is-dark {
@@ -25,7 +36,9 @@ a:active {color:pink;}   /* selected link */
   justify-content: space-between;
 }
 
-.twitter-icon, .linkedin-icon, .github-icon {
+.twitter-icon,
+.linkedin-icon,
+.github-icon {
   padding-left: 10px;
   width: 28px;
 }
@@ -37,7 +50,7 @@ a:active {color:pink;}   /* selected link */
 .card-content {
   display: flex;
   justify-content: space-around;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .go-buttons {
@@ -46,20 +59,19 @@ a:active {color:pink;}   /* selected link */
   margin: 10px;
 }
 
-.button.is-info.is-medium{
+.button.is-info.is-medium {
   margin: 10px;
 }
 
 .forecast {
   font-size: 20px;
   color: azure;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .current-weather {
   display: flex;
   justify-content: space-evenly;
   font-size: 26px;
-  font-weight:bold;
+  font-weight: bold;
 }
-

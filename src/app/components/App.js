@@ -1,11 +1,11 @@
-import 'bulma'
-import '../../shared/styles/main.scss'
+import "bulma";
+import "../../shared/styles/main.scss";
 
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import { Home } from '../../home'
-import Navbar from './Navbar'
-import { Warm } from '../../warm'
-import { Cool } from '../../cool'
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Home } from "../../home";
+import Navbar from "./Navbar";
+import { Warm } from "../../warm";
+import { Cool } from "../../cool";
 
 const App = () => {
   return (
@@ -22,8 +22,8 @@ const App = () => {
           <Home />
         </Route>
       </Switch>
-    </BrowserRouter> 
-  ) 
-}
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;

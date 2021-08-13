@@ -1,1 +1,1 @@
-export { default as Warm } from './components/WarmPlace'
+export { default as Warm } from "./components/WarmPlace";

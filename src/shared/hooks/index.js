@@ -1,1 +1,1 @@
-export * from './useForecast'
+export * from "./useForecast";
