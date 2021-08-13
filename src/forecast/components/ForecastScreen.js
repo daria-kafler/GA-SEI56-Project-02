@@ -2,7 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import { useForecast } from "../hooks/useForecast";
 
-const WarmPlace = () => {
+const ForecastScreen = () => {
   const location = useLocation();
   const isWram = location.pathname.toLowerCase() === "warm";
   const { data, loading, error, fetchForecast } = useForecast(isWram);
@@ -74,4 +74,4 @@ const WarmPlace = () => {
     </section>
   );
 };
-export default WarmPlace;
+export default ForecastScreen;
